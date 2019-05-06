@@ -1,0 +1,28 @@
+# Rename: terraform.tfvars.sample → terraform.tfvars
+
+# AWSのアクセスキー
+aws_access_key = "AKIXXXXXXXXXXXXXXXXXXXXXXXX"
+aws_secret_key = "XXXXXXXXXXXXXXXXXXXXXXXXXXX"
+
+# 秘密鍵・公開鍵ファイルのPath
+ssh_private_key_path = "~/.ssh/id_rsa"
+ssh_public_key_path = "~/.ssh/id_rsa.pub"
+
+# 各種リソースの名前のprefix
+prefix = "DevEnv"
+
+# インスタンスタイプ
+instance_type = "t2.small"
+
+# ボリュームサイズ [GB]
+volume_size = "20"
+
+# 既存サブネットのid
+subnet_id = "subnet-xxxxxxxxx"
+
+# 作成するインスタンスの private IP
+# intraのDNSサーバ/サービスに登録した/するIP
+private_ip = "xxx.xxx.xxx.xxx"
+
+# 既存セキュリティグループのid
+security_group_id = "sg-04fcb5ac5728ad396"
